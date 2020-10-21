@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 
 import scapy.all as scapy  # arp SPOOFING MITM attack
+from scapy.layers.dhcp import BOOTP, DHCP
+from scapy.layers.inet import IP, UDP
+from scapy.layers.l2 import Ether
+
 
 
 # def spoofing(target_ip, spoofed_ip): #telling the target we are this ip
